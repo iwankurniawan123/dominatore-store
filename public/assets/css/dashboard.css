@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Quicksand:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  background-color: #C5D7E3;
+  color: #2D4B94;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  font-weight: bold;
+}
+
+.nav-logo img {
+  max-height: 40px; 
+  margin-right: 10px; 
+  border-radius: 50%;
+  width: 50px;
+}
+
+.nav-title {
+  margin-left: -5px;
+  font-size: 1.3rem;
+  display: inline;
+  align-items: center;
+}
+
+.nav-link .link-list {
+  text-decoration: unset;
+  color: #2D4B94;
+  margin: 0px 16px;
+}
+
+main {
+  /* width: 100%; */
+  margin-inline: auto;
+  padding: 0rem 4rem 10rem 4rem;
+  flex: 1;
+  background-image: url("../img/bgdsh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #FCEC02;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  font-size: 2.5rem;
+  margin-block: 3rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Mengatur gambar berada di atas bawah */
+  align-items: flex-end; /* Mengatur gambar agak ke samping kanan */
+  gap: 1rem;
+margin-top: 20px;
+}
+
+main .content .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 475px;
+  padding: 10px;
+}
+
+footer{
+  color: #FCEC02;
+  background-color: #034A70;
+  justify-content: space-between;
+}
+
+.footer-social .social-icon {
+  color: #fcec02; /* Ubah warna ikon media sosial menjadi kuning */
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+}
